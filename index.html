@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="logo-section">
+            <div class="logo-title-area">
+                <img class="odin-logo" src="/odin-lined.png" alt="odin-logo">
+                <h1>Odin</h1>
+            </div>
+        
+            <p>Photo by <a href="https://unsplash.com/@esalexsh">Alex Sh</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+    </section>
+
+    <section class="form-section">
+        <div class="form-instruction">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Signup <i>now</i> to get started</p>
+            <p>You <i>know</i> you want to.</p>
+        </div>
+
+        <div class="form-input">
+            <form>
+                <h1>Let's do this!</h1>
+
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="secondname">Second Name</label>
+                        <input type="text" name="secondname" id="secondname" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="phonenum">Phone Number</label>
+                        <input type="number" name="phonenum" id="phonenum" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="pwd">Password</label>
+                        <input type="password" name="pwd" id="pwd" minlength="8" maxlength="15" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="confirmpwd">Confirm Password</label>
+                        <input type="password" name="confirmpwd" id="confirmpwd" minlength="8" maxlength="15" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-login">
+            <button>Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </section>
+</body>
+</html>

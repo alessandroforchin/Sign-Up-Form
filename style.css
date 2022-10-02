@@ -1,0 +1,212 @@
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    margin: 0;
+
+    display: flex;
+}
+
+/* LOGO SECTION */
+.logo-section {
+    background-image: url(/singupbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 1000px;
+    height: inherit;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-section a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.logo-section p {
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 400px;
+}
+
+.logo-title-area {
+    background-color: rgba(65, 65, 65, 0.37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 116px;
+}
+
+.odin-logo {
+    width: 100px;
+    height: fit-content;
+
+    padding: 20px 0 20px 0;
+}
+
+.logo-title-area h1 {
+    font-family: 'Wallpoet', cursive;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.form-instruction {
+    background-color: rgb(244, 244, 244);
+
+    padding: 60px 120px 40px 40px;
+}
+
+.form-instruction p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* FORM SECTION */
+.form-input {
+    padding: 20px 100px 20px 40px;
+    box-shadow: 0 10px 4px rgba(194, 194, 194, 0.194);
+}
+
+.form-input h1 {
+    padding-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-element {
+    padding: 0 50px 20px 0;  
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-element label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+}
+
+.form-element input {
+    width: 250px;
+    margin-top: 5px;
+    padding: 5px 10px 5px 10px;
+
+    appearance: none;
+
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    background-color: rgb(244, 244, 244);
+}
+
+.form-element input:hover {
+    border: 1px solid rgb(24, 172, 198);
+}
+
+.form-element input:focus,
+.form-element input:active {
+    appearance: none;
+    border: 1px solid rgb(24, 172, 198);
+}
+
+.form-element input[type='password']:invalid {
+    border: 1px solid rgb(212, 0, 0);
+}
+
+.form-element input:valid {
+    border: 1px solid green;
+}
+
+.form-login {
+    padding: 30px 0 30px 40px;
+}
+
+.form-login button {
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+
+    font-weight: bold;
+    color: white;
+    background-color: rgb(26, 188, 217);
+
+    box-shadow: 2px 4px 4px rgba(26, 188, 217, 0.326);
+    cursor: pointer;
+}
+
+.form-login button:hover {
+    background-color: rgb(24, 172, 198);
+    box-shadow: 2px 4px 4px rgb(24, 172, 198, 0.326);
+}
+
+.form-login a {
+    text-decoration: none;
+    color: rgb(26, 188, 217);
+    font-weight: bold;
+}
+
+.form-login a:hover {
+    color: rgb(24, 172, 198);
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        display: block;
+    }
+
+    .logo-section {
+        width: inherit;
+    }
+
+    .form-instruction {
+        padding: 20px 100px;
+        text-align: center;
+    }
+
+    .form-input {
+        padding: 20px;
+    }
+
+    .form-input h1{
+        text-align: center;
+    }
+
+    .form-row {
+        display: inline;
+        align-items: center;
+    }
+
+    .form-element {
+        padding: 0 0 20px 0;
+        align-items: center;
+    }
+
+    .form-element input {
+        width: 350px;
+    }
+
+    .form-login {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .form-login button {
+        margin: 0;
+    }
+
+    .form-login p,
+    .form-login a {
+        font-size: 12px;
+    }
+}
